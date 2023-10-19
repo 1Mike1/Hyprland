@@ -1,7 +1,7 @@
-# All the thems i took from prasanthrangan
+# All the themes i took from prasanthrangan
 > **Note**
 >
-> thanks to prasanthrangan's work and Senshi111, I am using the same script and themes for Ubuntu setup. Added all required libraries for Ubuntu  so that they could work in Ubuntu 23.04
+> thanks to prasanthrangan's work and Senshi111, I am using the same script and themes for Ubuntu setup. Added all required libraries for Ubuntu  so that they could work in Ubuntu 23.04.<br>
 >[prasanthrangan github page](https://github.com/prasanthrangan/hyprdots) 
 >[Senshi111 github page](https://github.com/Senshi111/debian-hyprland-hyprdots)
 
@@ -25,7 +25,7 @@ https://user-images.githubusercontent.com/106020512/235429801-e8b8dae2-c1ad-4e23
  -->
 
 ### Installation
-
+```shell
 sudo add-apt-repository restricted
 sudo add-apt-repository universe
 sudo add-apt-repository multiverse
@@ -36,23 +36,42 @@ sudo apt update
 sudo apt install -y gcc-13 g++-13
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 20
 sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-13 20
+```
+<br>
+<br>
 
-
+```shell
 sudo apt install -y libxcb-xfixes0-dev libxcb-shape0-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-image0-dev libxcb-util0-dev libxcb-keysyms1-dev libxcb-icccm4-dev libxcb-xkb-dev libxkbcommon-x11-dev libxkbcommon-dev libx11-xcb-dev libx11-dev libxext-dev libxi-dev libxrender-dev libxrandr-dev libxinerama-dev libxkbcommon-x11-dev libxkbcommon-dev libx11-xcb-dev libx11-dev libxext-dev libxi-dev libxrender-dev libxrandr-dev libxinerama-dev libxkbcommon-x11-dev libxkbcommon-dev libx11-xcb-dev libx11-dev libxext-dev libxi-dev libxrender-dev libxrandr-dev libxinerama-dev libxkbcommon-x11-dev libxkbcommon-dev libx11-xcb-dev libx11-dev libxext-dev libxi-dev libxrender-dev libxrandr-dev libxinerama-dev libxkbcommon-x11-dev libxkbcommon-dev libx11-xcb-dev libx11-dev libxext-dev libxi-dev libxrender-dev libxrandr-dev libxinerama-dev libxkbcommon-x11-dev libxkbcommon-dev libx11-xcb-dev libx11-dev libxext-dev libxi-dev libxrender-dev libxrandr-dev libxinerama-dev libxkbcommon-x11-dev libxkbcommon-dev libx11-xcb-dev libx11-dev libxext-dev libxi-dev libxrender-dev libxrandr-dev libxinerama-dev libxkbcommon-x11-dev libxkbcommon-dev libx11-xcb-dev libx11-dev libxext-dev libxi-dev libxrender-dev libxrandr-dev libxinerama-dev libxkbcommon-x11-dev libxkbcommon-dev libx11-xcb-dev libx11-dev libxext-dev libxi-dev libxrender-dev libxrandr-dev libxinerama-dev libxkbcommon-x11-dev libxkbcommon-dev libx11-xcb-dev libx11-dev libxext-dev libxi-dev libxrender-dev libxrandr-dev libxinerama-dev libxkbcommon-x11-dev
+```
+<br><br>
 
+```shell
 sudo apt install -y meson wget build-essential ninja-build cmake-extras cmake gettext gettext-base fontconfig libfontconfig-dev libffi-dev libxml2-dev libdrm-dev libxkbcommon-x11-dev libxkbregistry-dev libxkbcommon-dev libpixman-1-dev libudev-dev libseat-dev seatd libxcb-dri3-dev libvulkan-dev libvulkan-volk-dev  vulkan-validationlayers-dev libvkfft-dev libgulkan-dev libegl-dev libgles2 libegl1-mesa-dev glslang-tools libinput-bin libinput-dev libxcb-composite0-dev libavutil-dev libavcodec-dev libavformat-dev libxcb-ewmh2 libxcb-ewmh-dev libxcb-present-dev libxcb-icccm4-dev libxcb-render-util0-dev libxcb-res0-dev libxcb-xinput-dev xdg-desktop-portal-wlr
+```
+<br>
 
+```shell
 sudo apt install libwlroots-dev libwayland-dev libxcb1-dev wayland-protocols libinput-dev libxcb-icccm4-dev libxcb-image0-dev libxkbcommon-dev libxcb-util-dev
 
+<br>
+
+```shell
 sudo apt install libxcb-render-util0-dev libxcb-glx0-dev libxcb-glx0-dev libgstreamer1.0-dev libxtst-dev libxcb-util-dev libxcb-util0-dev
 sudo apt install build-essential libgtk-3-dev scdoc libpam
 sudo apt install doxygen cppcheck patch flex bison check
+```
 
+<br>
+
+```shell
 sudo apt install libpipewire-0.3-dev libspa-0.2-dev
 sudo apt install build-essential libgtk-3-dev scdoc libpam-dev
 sudo apt install mesa-vulkan-drivers vulkan-tools
 sudo apt install hwdata libliftoff-dev
+```
+<br>
 
+```shell
 # Build latest libinput
 git clone https://gitlab.freedesktop.org/libinput/libinput
 cd libinput
@@ -62,7 +81,10 @@ sudo ninja -C builddir/ install
 
 sudo systemd-hwdb update
 meson setup --prefix=/usr -Ddocumentation=false builddir/
+```
+<br>
 
+```shell
 # Build latest libliftoff-v0.4.1
 wget https://gitlab.freedesktop.org/emersion/libliftoff/-/archive/v0.4.1/libliftoff-v0.4.1.zip
 unzip libliftoff-v0.4.1.zip
@@ -73,7 +95,10 @@ ninja -C build/
 cd build
 ninja install
 cd ../..
+```
+<br>
 
+```shell
 # waybar
 wget https://codeload.github.com/Alexays/Waybar/zip/refs/tags/0.9.22
 unzip Waybar-0.9.22.zip
@@ -84,10 +109,11 @@ cd build
 ninja install
 
 cd ../..
+```
 
-
+```shell
 # sudo apt install waybar (if you dint build waybar above use this)
-
+```
 
 > **Warning**
 >
