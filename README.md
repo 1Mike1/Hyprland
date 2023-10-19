@@ -52,6 +52,7 @@ sudo apt install -y meson wget build-essential ninja-build cmake-extras cmake ge
 
 ```shell
 sudo apt install libwlroots-dev libwayland-dev libxcb1-dev wayland-protocols libinput-dev libxcb-icccm4-dev libxcb-image0-dev libxkbcommon-dev libxcb-util-dev
+```
 
 <br>
 
